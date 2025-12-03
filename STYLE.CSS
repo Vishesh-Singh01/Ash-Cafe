@@ -1,0 +1,141 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #2c2c2c;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #ffb347;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url('https://picsum.photos/1200/700?coffee') no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffb347;
+  color: #222;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ff9234;
+  color: white;
+}
+
+/* Menu */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+}
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.menu-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.menu-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.menu-card h3 {
+  margin: 15px 0 10px;
+}
+.menu-card span {
+  color: #ff9234;
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  padding: 60px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.contact button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #2c2c2c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
